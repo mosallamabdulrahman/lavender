@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import 'material-symbols';
+import { base } from '../src/utils/base';
 
 const HeroSection = () => {
   // استخدام Ref بدلاً من التلاعب المباشر بـ DOM
@@ -16,7 +17,7 @@ const HeroSection = () => {
       {/* Background Image Container */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/assets/camra.png"
+          src={base + 'assets/camra.png'}
           alt="Professional event photography setup in Kuwait"
           className="w-full h-full object-cover object-center scale-105"
         />

@@ -1,15 +1,17 @@
-
-import { BlogPost } from '../types';
+import { BlogPost } from "../types";
+import { base } from "../src/utils/base";
 
 export const blogPosts: BlogPost[] = [
   {
-    slug: 'lighting-for-kuwaiti-weddings',
-    title: 'إتقان الإضاءة في حفلات الزفاف الكويتية داخل القاعات',
-    date: '15 مارس 2024',
-    excerpt: 'استكشاف التحديات التقنية والحلول لتصوير القاعات الكبيرة ذات الأسقف العالية والإضاءة الفاخرة.',
-    cover: 'https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=1200&auto=format&fit=crop',
-    tags: ['تقني', 'زفاف'],
-    readingTime: '6 دقائق قراءة',
+    slug: "lighting-for-kuwaiti-weddings",
+    title: "إتقان الإضاءة في حفلات الزفاف الكويتية داخل القاعات",
+    date: "15 مارس 2024",
+    excerpt:
+      "استكشاف التحديات التقنية والحلول لتصوير القاعات الكبيرة ذات الأسقف العالية والإضاءة الفاخرة.",
+    cover:
+      "https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=1200&auto=format&fit=crop",
+    tags: ["تقني", "زفاف"],
+    readingTime: "6 دقائق قراءة",
     content: `
 # إتقان الإضاءة في حفلات الزفاف الكويتية داخل القاعات
 
@@ -22,16 +24,17 @@ export const blogPosts: BlogPost[] = [
 2.  **عدسات ذات فتحة واسعة**: عدسات f/1.2 أو f/1.4 ضرورية لالتقاط الأجواء بدون ضجيج (Grain).
 
 تابعونا للمزيد من النصائح حول تغطية الفعاليات في منطقة الخليج.
-    `
+    `,
   },
   {
-    slug: 'corporate-photography-etiquette',
-    title: 'إتيكيت تصوير الشركات: منظور كويتي',
-    date: '28 فبراير 2024',
-    excerpt: 'التنقل بين البروتوكولات المهنية والأعراف الثقافية أثناء فعاليات الأعمال رفيعة المستوى في مدينة الكويت.',
-    cover: '/assets/blog.png',
-    tags: ['شركات', 'أعمال'],
-    readingTime: '4 دقائق قراءة',
+    slug: "corporate-photography-etiquette",
+    title: "إتيكيت تصوير الشركات: منظور كويتي",
+    date: "28 فبراير 2024",
+    excerpt:
+      "التنقل بين البروتوكولات المهنية والأعراف الثقافية أثناء فعاليات الأعمال رفيعة المستوى في مدينة الكويت.",
+    cover: base + "assets/blog.png",
+    tags: ["شركات", "أعمال"],
+    readingTime: "4 دقائق قراءة",
     content: `
 # إتيكيت تصوير الشركات
 
@@ -39,21 +42,23 @@ export const blogPosts: BlogPost[] = [
 
 *   **دقة المواعيد**: الوصول قبل كبار الشخصيات بـ 45 دقيقة على الأقل.
 *   **المظهر العام**: البدلة الرسمية أو الدشداشة التقليدية حسب سياق الفعالية.
-    `
+    `,
   },
   {
-    slug: 'best-sunset-locations-kuwait',
-    title: 'أفضل 5 مواقع للغروب في الكويت لتصوير الفعاليات',
-    date: '10 يناير 2024',
-    excerpt: 'من كثبان المطلاع إلى سواحل الخليج العربي، اكتشف أفضل نقاط الساعة الذهبية.',
-    cover: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop',
-    tags: ['مواقع', 'خارجي'],
-    readingTime: '5 دقائق قراءة',
+    slug: "best-sunset-locations-kuwait",
+    title: "أفضل 5 مواقع للغروب في الكويت لتصوير الفعاليات",
+    date: "10 يناير 2024",
+    excerpt:
+      "من كثبان المطلاع إلى سواحل الخليج العربي، اكتشف أفضل نقاط الساعة الذهبية.",
+    cover:
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop",
+    tags: ["مواقع", "خارجي"],
+    readingTime: "5 دقائق قراءة",
     content: `
 # أفضل 5 مواقع للغروب في الكويت
 
 1. **جال المطلاع**: لصور صحراوية درامية.
 2. **ساحل أبراج الكويت**: الكلاسيكية التي لا تنتهي.
-    `
-  }
+    `,
+  },
 ];
