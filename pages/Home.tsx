@@ -98,7 +98,7 @@ const Home: React.FC = () => {
             <p className="text-gray-500 font-medium">أسعار شفافة بجودة فائقة. ابحث عن الباقة المناسبة لفعاليتك.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {packages.map((pkg) => (
+            {packages.slice(0, 3).map((pkg) => (
               <div key={pkg.id} className={`relative p-8 rounded-3xl border transition-all hover:shadow-2xl ${pkg.isFeatured ? 'border-lavender-deep shadow-xl shadow-lavender-deep/10' : 'border-gray-100'}`}>
                 {pkg.isFeatured && (
                   <span className="absolute top-0 left-8 -translate-y-1/2 bg-accent text-white px-4 py-1 rounded-full text-xs font-bold shadow-lg">
@@ -122,6 +122,46 @@ const Home: React.FC = () => {
               </div>
             ))}
           </div>
+<div className="mt-16 text-center">
+  <Link
+    to="/packages"
+    className="
+      group relative inline-flex items-center gap-3
+      px-14 py-5
+      rounded-full
+      bg-gradient-to-r from-lavender to-purple-500
+      text-white font-bold text-lg
+      shadow-[0_10px_30px_rgba(124,58,237,0.35)]
+      transition-all duration-300
+      hover:shadow-[0_15px_40px_rgba(124,58,237,0.5)]
+      hover:-translate-y-1
+      active:scale-95
+      overflow-hidden
+    "
+  >
+    <span className="relative z-10">جميع الباقات</span>
+
+    {/* subtle shine effect */}
+    <span className="
+      absolute inset-0
+      bg-white/10
+      opacity-0
+      group-hover:opacity-100
+      transition-opacity duration-300
+    "/>
+
+    {/* animated light sweep */}
+    <span className="
+      absolute -left-20 top-0 h-full w-20
+      bg-white/30 blur-xl
+      rotate-12
+      translate-x-0
+      group-hover:translate-x-[400%]
+      transition-all duration-700
+    "/>
+  </Link>
+</div>
+
         </div>
       </section>
 

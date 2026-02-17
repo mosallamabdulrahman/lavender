@@ -3,12 +3,6 @@ import { base } from '../src/utils/base';
 
 export const portfolioItems: WorkItem[] = [
   {
-    id: '1',
-    title: 'مؤتمر قمة الشرق الأوسط',
-    category: 'Corporate',
-    imageUrl: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=800&auto=format&fit=crop',
-  },
-  {
     id: '2',
     title: 'تنسيق قاعة الراية الفاخرة',
     category: 'Wedding',
@@ -18,19 +12,13 @@ export const portfolioItems: WorkItem[] = [
     id: '3',
     title: 'إطلالة أبراج الكويت ليلاً',
     category: 'Event',
-    imageUrl: base + 'assets/tour.jpg',
-  },
-  {
-    id: '4',
-    title: 'منتدى الأعمال والاقتصاد',
-    category: 'Corporate',
-    imageUrl: base + 'assets/work-2.jpg',
+    imageUrl: base + 'assets/images/tour.jpg',
   },
   {
     id: '5',
     title: 'مجلس استقبال كبار الشخصيات',
     category: 'Wedding',
-    imageUrl: base + 'assets/2.jpg',
+    imageUrl: base + 'assets/images/2.jpg',
   },
   {
     id: '6',
@@ -42,13 +30,7 @@ export const portfolioItems: WorkItem[] = [
     id: '7',
     title: 'مهرجان التراث البحري',
     category: 'Event',
-    imageUrl: base + 'assets/work.jpg',
-  },
-  {
-    id: '8',
-    title: 'حفل توقيع اتفاقية السلام',
-    category: 'Corporate',
-    imageUrl: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=800&auto=format&fit=crop',
+    imageUrl: base + 'assets/images/work.jpg',
   },
   {
     id: '9',
@@ -63,15 +45,9 @@ export const portfolioItems: WorkItem[] = [
     imageUrl: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=800&auto=format&fit=crop',
   },
   {
-    id: '11',
-    title: 'منصة تكريم رجال الأعمال',
-    category: 'Corporate',
-    imageUrl: base + 'assets/mens.jpg',
-  },
-  {
     id: '12',
     title: 'قاعة احتفال ملكية بإضاءة ذهبية',
     category: 'Wedding',
-    imageUrl: base + 'assets/oo.webp',
+    imageUrl: base + 'assets/images/oo.webp',
   },
 ];

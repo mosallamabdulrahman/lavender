@@ -7,6 +7,8 @@ import Footer from './Footer';
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const { pathname } = useLocation();
 
+  const isHomePage = pathname === '/';
+
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [pathname]);
@@ -14,7 +16,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
-      <main className="flex-grow pt-16 md:pt-20">
+      <main className={`flex-grow ${isHomePage ? '' : 'pt-16 md:pt-20' }`}>
         {children}
       </main>
       <Footer />

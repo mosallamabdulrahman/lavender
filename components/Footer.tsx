@@ -2,6 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { siteConfig, navItems } from '../content/site';
+import { base } from '../src/utils/base';
 
 const Footer: React.FC = () => {
   const socials = [
@@ -38,9 +39,16 @@ const Footer: React.FC = () => {
     <footer className="bg-ink text-white pt-20 pb-10 text-right">
       <div className="container mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-4 gap-12 border-b border-white/10 pb-12">
         <div className="space-y-6">
-          <Link to="/" className="text-3xl font-serif font-bold">
-            لافندر <span className="text-lavender">للتصوير</span>
-          </Link>
+          {/* 1. الجانب الأيمن: اللوجو (RTL) */}
+          <div className="flex items-center">
+            <Link to="/" className="flex items-center">
+              <img 
+                className='transition-all duration-300 rounded w-12 sm:w-14' 
+                src={base + 'assets/images/logo.jpeg'} 
+                alt="lavender logo" 
+              />
+            </Link>
+          </div>
           <p className="text-gray-400 text-sm leading-relaxed font-medium">
             تصوير فعاليات فاخرة في الكويت. نلتقط اللحظات بدقة، أناقة، واحترام كامل للخصوصية والتقاليد.
           </p>
@@ -86,7 +94,7 @@ const Footer: React.FC = () => {
           <ul className="space-y-4 text-gray-400 text-sm font-bold">
             <li>{siteConfig.address}</li>
             <li>{siteConfig.email}</li>
-            <li>{siteConfig.phone}</li>
+            <li dir='ltr'><a href="tel:+96569003952">{siteConfig.phone}</a></li>
           </ul>
         </div>
       </div>

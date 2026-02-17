@@ -45,7 +45,7 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="text-lg font-bold mb-1">اتصل بنا</h4>
-                  <p className="text-gray-500 font-medium">{siteConfig.phone}</p>
+                  <a href='tel:+96569003952' dir='ltr' className="text-gray-500 font-medium">{siteConfig.phone}</a>
                 </div>
               </div>
             </div>
@@ -109,7 +109,6 @@ const Contact: React.FC = () => {
                   <label className="text-sm font-bold mr-4">نوع الفعالية</label>
                   <select className="w-full px-6 py-4 rounded-2xl bg-white border border-transparent focus:border-lavender-deep outline-none transition-all appearance-none text-right">
                     <option>حفل زفاف</option>
-                    <option>فعالية شركات</option>
                     <option>إطلاق منتج</option>
                     <option>حفل تخرج</option>
                     <option>أخرى</option>

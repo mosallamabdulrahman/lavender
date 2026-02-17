@@ -32,7 +32,7 @@ export const blogPosts: BlogPost[] = [
     date: "28 فبراير 2024",
     excerpt:
       "التنقل بين البروتوكولات المهنية والأعراف الثقافية أثناء فعاليات الأعمال رفيعة المستوى في مدينة الكويت.",
-    cover: base + "assets/blog.png",
+    cover: base + "assets/images/blog.png",
     tags: ["شركات", "أعمال"],
     readingTime: "4 دقائق قراءة",
     content: `

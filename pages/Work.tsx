@@ -12,7 +12,7 @@ const categoryTranslation: Record<string, string> = {
   'Event': 'فعاليات'
 };
 
-const categories = ['All', 'Wedding', 'Corporate', 'Graduation', 'Product', 'Event'];
+const categories = ['All', 'Wedding', 'Graduation', 'Product', 'Event'];
 
 const Work: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState('All');
