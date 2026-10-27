@@ -42,7 +42,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2, duration: 0.8 }}
-            className="font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white leading-[1.15] mb-6 drop-shadow-lg"
+            className="font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white !leading-[1.15] mb-6 drop-shadow-lg"
           >
             توثيق لحظاتكم
             <br />
@@ -54,7 +54,7 @@ const HeroSection = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
-            className="text-gray-300 text-base md:text-lg lg:text-xl leading-relaxed max-w-2xl mb-10 drop-shadow-md"
+            className="text-gray-300 text-base md:text-lg lg:text-xl !leading-relaxed max-w-2xl mb-10 drop-shadow-md"
           >
             متخصصون في تغطية المناسبات الرجالية، وتصوير المنتجات الفاخرة. نروي القصة بعدسة احترافية تعكس الفخامة والدقة.
           </motion.p>
